@@ -5,8 +5,44 @@ import { MdDeveloperMode } from "react-icons/md";
 import { IProject, Service, Skill } from "./types";
 
 import { BsCircleFill } from "react-icons/bs";
+import {SiAzuredevops,SiJenkins,SiApachetomcat,SiMicrosoftazure} from "react-icons/si";
+import {FaAws} from "react-icons/fa";
+import {CgServer} from "react-icons/cg";
 
 export const services: Service[] = [
+  {
+    Icon: SiAzuredevops,
+    title: "DevOps",
+    about: " 3+ years of experience as a DevOps Engineer involved in <b>System Administration, Automation, and Cloud Computing</b>.",
+  },
+  {
+    Icon: CgServer,
+    title: "Server Administration",
+    about: " Experience in <b>Server build,Migration,Troubleshooting,Security, Disaster Recovery, Performance Monitoring and Fine-tuning.</b>",
+  },
+  {
+    Icon: FaAws,
+    title: "Amazon Web Services",
+    about:
+      "Experience in AWS including <b>EC2,ELB,S3,RDS,Lambda,Cloud formation</b> for deployment and automation of web applications.",
+  },
+  {
+    Icon: SiMicrosoftazure,
+    title: "Microsoft Azure",
+    about: "Building and configuring <b>Azure infrastructure</b> to meet the client's needs while leveraging <b>Azure templates & Azure DevOps tools.</b>",
+  },
+  {
+    Icon: SiJenkins,
+    title: "CI/CD",
+    about:
+      "Experience with CI/CD using various Tools like <b>Jenkins, Puppet, Chef, Ansible, Hudson, and Bamboo.</b>",
+  },
+  {
+    Icon: SiApachetomcat,
+    title: "Web Application Administration",
+    about:
+      "Experience in administering applications to WebSphere,Tomcat,JBOSS,and OpenShift environment",
+  },
   {
     Icon: RiComputerLine,
     title: "Frontend Development",
@@ -17,31 +53,10 @@ export const services: Service[] = [
     Icon: FaServer,
     title: "Backend  Development",
     about:
-      "handle database, server, api using <b>Express </b> & other popular frameworks",
+      "handle database, server, api using <b>Springboot </b> & other popular frameworks",
   },
-  {
-    Icon: AiOutlineApi,
-    title: "API Development",
-    about:
-      "I can develop robust  REST API using <b>django-rest-api</b>  & <b>Node API</b> ",
-  },
-  {
-    Icon: MdDeveloperMode,
-    title: "Competitive Coder",
-    about: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
-  },
-  {
-    Icon: AiOutlineAntDesign,
-    title: "UI/UX designer",
-    about:
-      "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
-  },
-  {
-    Icon: RiComputerLine,
-    title: "Whatever",
-    about:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
-  },
+  
+  
 ];
 
 export const languages: Skill[] = [
