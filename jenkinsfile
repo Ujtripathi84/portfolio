@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout your public GitHub repository
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Ujtripathi84/portfolio.git']]])
+            }
+        }
+        stage('Build') {
+            steps {
+                // Build your Next.js app
+                sh 'npm install'
+                sh 'npm run build'
+            }
+        }
+        stage('SonarQube Analysis') {
+            steps {
+                // Run SonarQube analysis
+                withSonarQubeEnv('sonar') {
+                    sh 'npm install sonar-scanner'
+                    sh 'npm run sonar'
+                }
+            }
+        }
+    }
+}
