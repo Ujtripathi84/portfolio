@@ -23,7 +23,7 @@ const About = ({endpoint}) => {
     exit="exit"
     >
       <h6 className="my-3 text-base font-medium">
-        Microsoft Azure Certified DevOps Engineer with 3+ years of hands-on experience supporting Infrastructure (AZURE, Linux, Windows) , automating and optimizing mission critical 
+        Microsoft Azure Certified DevOps Engineer with 4+ years of hands-on experience supporting Infrastructure (AZURE, Linux, Windows) , automating and optimizing mission critical 
         deployments in the cloud and on-premises , leveraging configuration management, automation, orchestration and DevOps processes.
       </h6>
       <div
